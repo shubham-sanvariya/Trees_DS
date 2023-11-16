@@ -16,13 +16,18 @@ public class Main {
 //        tree.populate(nums2);
 //        tree.display();
 
-        Tree2AVL tree = new Tree2AVL();
+//        Tree2AVL tree = new Tree2AVL();
+//
+//        for (int i = 0; i < 1000; i++) {
+//            tree.insert(i);
+//        }
+//
+//        System.out.println(tree.height());
+//        tree.display();
 
-        for (int i = 0; i < 1000; i++) {
-            tree.insert(i);
-        }
-
-        System.out.println(tree.height());
-        tree.display();
+        int[] arr = {3,8,6,7,-2,-8,4,9};
+        SegmentTree segmentTree = new SegmentTree(arr);
+//        segmentTree.display();
+        System.out.println(segmentTree.query(1,6));
     }
 }
