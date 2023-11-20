@@ -54,7 +54,6 @@ public class BT_Level_Order_Triversal {
     public static void main(String[] args) {
         BT_Level_Order_Triversal node = new BT_Level_Order_Triversal();
         int[] nums = { 5, 2, 7, 1, 4, 6, 9, 8, 3, 10};
-//        node.populate(nums);
         node.levelOrder(node.populate(nums));
     }
 
