@@ -25,9 +25,13 @@ public class Main {
 //        System.out.println(tree.height());
 //        tree.display();
 
-        int[] arr = {3,8,6,7,-2,-8,4,9};
-        SegmentTree segmentTree = new SegmentTree(arr);
-//        segmentTree.display();
-        System.out.println(segmentTree.query(1,6));
+//        int[] arr = {3,8,6,7,-2,-8,4,9};
+//        SegmentTree segmentTree = new SegmentTree(arr);
+////        segmentTree.display();
+//        System.out.println(segmentTree.query(1,6));
+
+        FindSuccessor findSuccessor = new FindSuccessor();
+        int[] nums = {3,9,20,15,7};
+        findSuccessor.findSuccessor(findSuccessor.populate(nums),7);
     }
 }
